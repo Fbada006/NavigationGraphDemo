@@ -12,3 +12,7 @@ env:
 # Run assemble and unit tests
 script:
   - ./gradlew clean assembleDebug assembleRelease testDebug
+  - chmod +x ./gradlew
+
+before_install:
+  - chmod +x gradlew
