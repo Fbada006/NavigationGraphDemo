@@ -43,5 +43,5 @@ cache:
     - $HOME/.android/build-cache
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t aaf7e8f7-d198-4ac1-9370-e8d4e5840497
+  - bash <(curl -s https://codecov.io/bash) -t bd231fa6-bd4a-42dc-a683-e67979f44bba
 
