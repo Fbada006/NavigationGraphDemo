@@ -19,7 +19,8 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val navHostFragment = childFragmentManager.findFragmentById(R.id.fragment_home) as NavHostFragment
+        val navHostFragment =
+            childFragmentManager.findFragmentById(R.id.fragment_home) as NavHostFragment
 
         //Set up the bottom nav view
         view.findViewById<BottomNavigationView>(R.id.bottomNavigationView)
