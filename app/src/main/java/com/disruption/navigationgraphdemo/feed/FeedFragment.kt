@@ -27,7 +27,8 @@ class FeedFragment : Fragment() {
     }
 
     private fun onBoatClick(boatId: Int) {
-        val action = HomeFragmentDirections.actionHomeFragmentToBoatFragment(boatId)
+        val action =
+            HomeFragmentDirections.actionHomeFragmentToBoatFragment(boatId)
         activity?.findNavController(R.id.nav_container)?.navigate(action)
     }
 }
