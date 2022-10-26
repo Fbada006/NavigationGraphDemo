@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_bottom_bar" />
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_home"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"

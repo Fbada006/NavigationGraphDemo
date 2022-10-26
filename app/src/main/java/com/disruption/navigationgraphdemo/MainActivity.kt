@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
             notificationManager.createNotificationChannel(channel)
         }
 
-        val args = BoatFragmentArgs.Builder(3).build().toBundle()
+        val args = Bundle()
+        args.putInt("id", 3)
 
         val pendingIntent = NavDeepLinkBuilder(this)
             .setGraph(R.navigation.nav_graph)
