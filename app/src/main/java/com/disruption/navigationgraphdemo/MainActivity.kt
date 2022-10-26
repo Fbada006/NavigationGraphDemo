@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val args = Bundle()
-        args.putInt("id", 3)
+        args.putInt("id", 1)
 
         val pendingIntent = NavDeepLinkBuilder(this)
             .setGraph(R.navigation.nav_graph)

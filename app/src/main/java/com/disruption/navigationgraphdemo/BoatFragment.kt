@@ -18,9 +18,9 @@ class BoatFragment : Fragment() {
     ): View? {
 
         //Use the ID from the deep link or from the safe args depending on where it comes from
-      //  val id = arguments?.getString("id_dl")?.toInt() ?: BoatFragmentArgs.fromBundle(arguments!!).id
+        val id = arguments?.getString("id_dl")?.toInt() ?: BoatFragmentArgs.fromBundle(requireArguments()).id
 
-        val boat = BOATS.getBoat(3)
+        val boat = BOATS.getBoat(id)
 
         val view = inflater.inflate(R.layout.fragment_boat, container, false)
         view.findViewById<TextView>(R.id.nameTextView).text = boat.name
