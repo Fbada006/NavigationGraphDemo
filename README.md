@@ -6,4 +6,5 @@
 This is a project that shows the usage of the Navigation Architecture Component. It is also the first project I have used Travis CI as well as CodeCov and Code Quality
 
 # On Deeplinking
-Use the following command `adb shell am start -a android.intent.action.VIEW -d https://www.example.com/boat/2`
+Use the following command `adb shell am start -a android.intent.action.VIEW -d https://www.example.com/boat/2`. If you run into any 
+adb issues, then check [this](https://stackoverflow.com/a/28208121/8344055) issue out for help.
